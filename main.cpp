@@ -15,7 +15,7 @@ int answer;
 
 int solve() {
     cin >> n >> k >> p;
-    memset(dp, 0xc0, sizeof(dp));
+    memset(dp, 0, sizeof(dp));
     dp[0][0]=0;
     for(int i=0; i<n; ++i) {
         memcpy(dp[i+1], dp[i], sizeof(dp[0]));
